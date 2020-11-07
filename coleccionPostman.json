@@ -1,0 +1,145 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2020-11-07T02:32:55.499Z",
+    "__export_source": "insomnia.desktop.app:v2020.4.2",
+    "resources": [
+        {
+            "_id": "req_16c6da258028431c8e494035c589318b",
+            "parentId": "wrk_8f4eec9ce5c940fa90f894168318e489",
+            "modified": 1604716269316,
+            "created": 1604716249868,
+            "url": "http://localhost:3000/login",
+            "name": "POST LoginJwt",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\":\"jlucasi\",\n\t\"password\":\"password\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_a582ebf2585f470cac8b5894ed858f33"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1604716249868,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_8f4eec9ce5c940fa90f894168318e489",
+            "parentId": null,
+            "modified": 1604716140748,
+            "created": 1604716140748,
+            "name": "JWT API",
+            "description": "",
+            "scope": null,
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_0ad9539ef6454c6290588a742f69a7b1",
+            "parentId": "wrk_8f4eec9ce5c940fa90f894168318e489",
+            "modified": 1604716226346,
+            "created": 1604716209282,
+            "url": "http://localhost:3000",
+            "name": "GET Jwt",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dvcmQiOiJwYXNzd29yZCIsImlhdCI6MTYwNDcwNjQ3OCwiZXhwIjoxNjA0NzkyODc4fQ.hbvc3ssWlpRcYdi5afLTF2OuCDUkY4dSH8_WlPkjSIk",
+                    "id": "pair_27eef3d49bc44d55b9f23e2b87d6e9a7"
+                }
+            ],
+            "authentication": {
+                "type": "bearer"
+            },
+            "metaSortKey": -1604716209282,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_0156135cb2784d62b3cc284ab236c29d",
+            "parentId": "wrk_8f4eec9ce5c940fa90f894168318e489",
+            "modified": 1604716186317,
+            "created": 1604716168048,
+            "url": "http://localhost:3000/register",
+            "name": "POST RegisterJwt",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\":\"username\",\n\t\"password\":\"password\",\n\t\"role\":\"admin\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_6f30bcff19ea4ac2bbd3bc8c8694114d"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1604716168110,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_4681f1980507035fc2c353ceb5bdcf2d690bf223",
+            "parentId": "wrk_8f4eec9ce5c940fa90f894168318e489",
+            "modified": 1604716140910,
+            "created": 1604716140910,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1604716140910,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_4681f1980507035fc2c353ceb5bdcf2d690bf223",
+            "parentId": "wrk_8f4eec9ce5c940fa90f894168318e489",
+            "modified": 1604716140914,
+            "created": 1604716140914,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_2ed6276dc4ed450fa2b3b9c77cbf23d6",
+            "parentId": "wrk_8f4eec9ce5c940fa90f894168318e489",
+            "modified": 1604716140753,
+            "created": 1604716140753,
+            "fileName": "JWT API",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}
